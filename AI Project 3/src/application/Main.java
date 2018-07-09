@@ -43,15 +43,13 @@ public class Main extends Application {
 			txta.setEditable(false);
 			txta.setFont(new Font("Arial", 16));
 			txta.setWrapText(true);
-			// txta.setStyle("-fx-control-inner-background:#000000; -fx-highlight-fill:
-			// #00ff00; -fx-highlight-text-fill: #000000; -fx-text-fill: #00ff00; ");
 
 			HBox hbox = new HBox(15, ibtn, txt, sbtn);
 
 			// code goes here
 
 			TreeMap<String, HashSet<String>> map = new TreeMap<String, HashSet<String>>();
-			File file = new File("/Users/mohammadtabakhna/Desktop/quran.txt");
+			File file = new File("../quran.txt"); //file location goes here
 			int totalCounter = 0;
 
 			ibtn.setOnAction(new EventHandler<ActionEvent>() {
